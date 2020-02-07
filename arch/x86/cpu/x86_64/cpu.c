@@ -17,7 +17,7 @@
 struct global_data *global_data_ptr __attribute__((section(".data"))) = (struct global_data *)~0;
 
 // https://www.mail-archive.com/search?l=u-boot%40lists.denx.de&q=subject:%22%5C%5BU%5C-Boot%5C%5D+%5C%5BPATCH+1%5C%2F1%5C%5D+x86%5C%3A+put+global+data+pointer+into+the%09.text+section%22&o=newest&f=1
-// JW original struct global_data *global_data_ptr = (struct global_data *)~0;
+// original jw struct global_data *global_data_ptr = (struct global_data *)~0;
 
 void arch_setup_gd(gd_t *new_gd)
 {

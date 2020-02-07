@@ -265,13 +265,13 @@ static void getvar_is_userspace(char *var_parameter, char *response)
  */
 void fastboot_getvar(char *cmd_parameter, char *response)
 {
-	static int var = 1;
+//	static int var = 1;
 
 //	__asm__("int3");
-	while (var)
-	{
-		;
-	}
+//	while (var)
+//	{
+//		;
+//	}
 
 	if (!cmd_parameter) {
 		fastboot_fail("missing var", response);
